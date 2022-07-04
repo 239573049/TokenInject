@@ -1,36 +1,27 @@
 # TokenInject
+document [中文](README.md) | [English](README.en.md)
 
-#### Description
-超简化注入,继承接口即可实现注入
+## introduce
+Super simplified injection, inheritance interface can achieve injection
 
-#### Software Architecture
-Software architecture description
+## use the tools
 
-#### Installation
+```csharp
+using Token.Inject;
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+var builder = WebApplication.CreateBuilder(args);
+// The current assembly is registered by default
+builder.Services.AddAutoInject();
+---
+builder.Services.AddAutoInject(typeof(需要注册的程序集的类));
 
-#### Instructions
+---
+// When registration is required, the corresponding interface can be inherited
+public class DateService:IDateService,ISingletonTag
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+public class DateService:IDateService,IScopedTag
 
-#### Contribution
+public class DateService:IDateService,ITransientTag
 
-1.  Fork the repository
-2.  Create Feat_xxx branch
-3.  Commit your code
-4.  Create Pull Request
+```
 
-
-#### Gitee Feature
-
-1.  You can use Readme\_XXX.md to support different languages, such as Readme\_en.md, Readme\_zh.md
-2.  Gitee blog [blog.gitee.com](https://blog.gitee.com)
-3.  Explore open source project [https://gitee.com/explore](https://gitee.com/explore)
-4.  The most valuable open source project [GVP](https://gitee.com/gvp)
-5.  The manual of Gitee [https://gitee.com/help](https://gitee.com/help)
-6.  The most popular members  [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)

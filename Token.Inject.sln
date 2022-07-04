@@ -4,6 +4,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Token.Inject", "src\Token.I
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{11D9F912-EC81-4A10-9B74-08DE3BDB9155}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{C9813635-760A-47B7-9A5E-547282C87A8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoInjectTest", "test\Token.Inject\AutoInjectTest\AutoInjectTest.csproj", "{2F8BB903-96B2-41DF-9754-3E8127CA3589}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -14,8 +18,13 @@ Global
 		{8F2264DC-8D13-4A19-8815-DD071AD0BB55}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F2264DC-8D13-4A19-8815-DD071AD0BB55}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F2264DC-8D13-4A19-8815-DD071AD0BB55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F8BB903-96B2-41DF-9754-3E8127CA3589}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F8BB903-96B2-41DF-9754-3E8127CA3589}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F8BB903-96B2-41DF-9754-3E8127CA3589}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F8BB903-96B2-41DF-9754-3E8127CA3589}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{8F2264DC-8D13-4A19-8815-DD071AD0BB55} = {11D9F912-EC81-4A10-9B74-08DE3BDB9155}
+		{2F8BB903-96B2-41DF-9754-3E8127CA3589} = {C9813635-760A-47B7-9A5E-547282C87A8F}
 	EndGlobalSection
 EndGlobal

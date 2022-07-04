@@ -1,37 +1,30 @@
 # TokenInject
+[![NuGet](https://img.shields.io/nuget/dt/Token.Inject.svg?label=NuGet&style=flat&logo=nuget)](https://www.nuget.org/packages/Token.Inject/)
+[![NuGet](https://img.shields.io/nuget/v/Token.Inject.svg?label=NuGet&style=flat&logo=nuget)](https://www.nuget.org/packages/Token.Inject/)
 
-#### 介绍
+document [中文](README.md) | [English](README.en.md)
+
+## 介绍
 超简化注入,继承接口即可实现注入
 
-#### 软件架构
-软件架构说明
+## 使用工具
 
+```csharp
+using Token.Inject;
 
-#### 安装教程
+var builder = WebApplication.CreateBuilder(args);
+// 默认注册当前程序集
+builder.Services.AddAutoInject();
+---
+builder.Services.AddAutoInject(typeof(需要注册的程序集的类));
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+---
+// 在需要注册的时候继承相应的接口即可
+public class DateService:IDateService,ISingletonTag
 
-#### 使用说明
+public class DateService:IDateService,IScopedTag
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+public class DateService:IDateService,ITransientTag
 
-#### 参与贡献
+```
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)

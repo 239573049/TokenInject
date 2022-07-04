@@ -10,7 +10,11 @@
         <PackageIcon>logo.png</PackageIcon>
         <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
         <Version>1.0.5</Version>
-        <PackageVersion>1.1.0</PackageVersion>
+        <PackageVersion>1.1.1</PackageVersion>
+        <PackageProjectUrl>https://github.com/239573049/TokenInject</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/239573049/TokenInject</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageTags>主动注入</PackageTags>
     </PropertyGroup>
 
     <ItemGroup>
